@@ -1,0 +1,164 @@
+/* Destaca os serviços em uma faixa escura, mantendo a paleta do portfólio. */
+.services {
+    padding: 88px 20px 120px;
+    background-color: var(--gray-600);
+}
+
+.services-content {
+    width: min(1040px, 100%);
+    margin: 0 auto;
+}
+
+.services-heading,
+.contact-heading {
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.section-eyebrow {
+    margin: 0 0 8px;
+    color: var(--red);
+    font: var(--subtitle);
+}
+
+.section-title {
+    color: var(--gray-100);
+    font: var(--title-md);
+}
+
+/* Mantém os três serviços lado a lado em telas largas. */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.service-card {
+    min-width: 0;
+    padding: 20px;
+    border: 2px solid var(--gray-400);
+    border-radius: 12px;
+}
+
+.service-icon {
+    display: block;
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    object-position: left center;
+    margin-bottom: 20px;
+}
+
+.service-icon--purple {
+    filter: invert(55%) sepia(63%) saturate(464%) hue-rotate(229deg) brightness(94%) contrast(91%);
+}
+
+.service-icon--yellow {
+    filter: invert(80%) sepia(43%) saturate(660%) hue-rotate(4deg) brightness(97%) contrast(88%);
+}
+
+.service-icon--green {
+    filter: invert(75%) sepia(34%) saturate(619%) hue-rotate(43deg) brightness(95%) contrast(89%);
+}
+
+.service-card h3 {
+    margin-bottom: 8px;
+    color: var(--gray-100);
+    font: var(--title-sm);
+}
+
+.service-card p {
+    margin: 0;
+    color: var(--gray-300);
+    font: var(--text-sm);
+    text-align: left;
+}
+
+/* Usa o fundo ilustrado existente para reproduzir os detalhes nas laterais. */
+.contact {
+    min-height: 600px;
+    padding: 88px 20px 120px;
+    background: var(--gray-500) url("../assets/bg/Background_Contacts.png") center top / cover no-repeat;
+}
+
+.contact-content {
+    width: min(600px, 100%);
+    margin: 0 auto;
+}
+
+.contact-heading {
+    margin-bottom: 32px;
+}
+
+.contact-description {
+    margin: 8px 0 0;
+    color: var(--gray-300);
+    font: var(--text-sm);
+}
+
+/* Empilha os links para combinar com a composição central da referência. */
+.contact-links {
+    display: grid;
+    gap: 12px;
+}
+
+.contact-link {
+    display: grid;
+    grid-template-columns: 24px 1fr 18px;
+    align-items: center;
+    gap: 12px;
+    min-height: 52px;
+    padding: 0 16px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    background-color: var(--gray-400);
+    color: var(--gray-200);
+    font: var(--text-sm);
+    text-decoration: none;
+    transition: border-color 160ms ease, color 160ms ease;
+}
+
+.contact-link:hover,
+.contact-link:focus-visible {
+    border-color: var(--blue);
+    color: var(--gray-100);
+}
+
+.contact-link:focus-visible {
+    outline: 2px solid var(--blue);
+    outline-offset: 3px;
+}
+
+.contact-link > img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.contact-link .contact-arrow {
+    width: 14px;
+    height: 14px;
+    justify-self: end;
+    filter: invert(55%) sepia(73%) saturate(554%) hue-rotate(166deg) brightness(91%) contrast(89%);
+}
+
+@media (max-width: 760px) {
+    .services {
+        padding-block: 64px 80px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .service-card {
+        padding: 18px;
+    }
+
+    .contact {
+        min-height: 560px;
+        padding-block: 72px 96px;
+        background-size: auto 100%;
+    }
+}

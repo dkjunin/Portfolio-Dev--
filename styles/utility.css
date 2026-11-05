@@ -75,3 +75,25 @@
     }
 }
 
+.grid {
+    display: grid;
+}
+
+.grid-flow-col{
+    grid-auto-flow: column;
+}
+
+.grid-cols-2{
+    grid-template-columns: 1fr 1fr;
+}
+
+.gap-24{
+    gap: 24px;
+}
+
+.card{
+    width: 306px;
+    height: 106px;
+
+}
+

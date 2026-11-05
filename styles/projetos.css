@@ -1,0 +1,79 @@
+/* centraliza a seção e limita sua largura como no layout de referência. */
+.projects {
+    width: min(1200px, calc(100% - 40px));
+    margin: 0 auto;
+    padding: 64px 0;
+}
+
+/* mantém o título independente do cabeçalho global da página. */
+.projects-heading {
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.projects-heading p {
+    margin-bottom: 8px;
+}
+
+/* distribui os cards em três colunas no desktop. */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+/* cada card agrupa a imagem e seu texto em uma única superfície. */
+.project-card {
+    min-width: 0;
+    padding: 12px 12px 20px 12px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: var(--gray-400);
+}
+
+.project-card img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 2 / 1;
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+.project-info {
+    margin: 15px 3px 0;
+}
+
+.project-info h3 {
+    margin-bottom: 6px;
+    color: var(--gray-100);
+}
+
+.project-info p {
+    margin: 0;
+    color: var(--gray-200);
+    text-align: left;
+}
+
+/* reduz as colunas para preservar a leitura em telas menores. */
+@media (max-width: 800px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 520px) {
+    .projects {
+        width: min(100% - 32px, 400px);
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+#textos{
+    color: var(--gray-100)
+}
+    #meu-trabalho{
+        color: var(--red);
+    }

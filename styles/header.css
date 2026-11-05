@@ -2,7 +2,7 @@
 #intro {
     background-image: url(/assets/bg/Background_Intro.png);
     /* estica a imagem para preencher o fundo sem cortar nenhuma parte. */
-    background-size: 100% 100%;
+    background-size: 100% 80%;
     /* alinha o fundo ao topo, evitando espaço vazio acima. */
     background-position: center top;
     background-repeat: no-repeat;
@@ -12,13 +12,14 @@
     align-items: center;
     justify-content: center;
     padding-inline: 180px;
-    padding-bottom: 120px;
+    margin-bottom: 0px;
+    padding: 0px;
 }
 
 header{
-    padding-block: 120px 183px;
+    padding-block: 120px auto;
     padding-inline: 163px;
-    margin-bottom: 94px;
+    margin-bottom: 4px;
     margin-top: 120px;
 
 }
@@ -105,5 +106,6 @@ div #div-tag{
     display: flex;
     justify-content: center;
     margin: 94px auto 0;
+    padding-top: 94px;
 
 }
