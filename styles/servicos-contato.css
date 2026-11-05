@@ -1,4 +1,4 @@
-/* Destaca os serviços em uma faixa escura, mantendo a paleta do portfólio. */
+/* destaca os serviços em uma faixa escura, mantendo a paleta do portfólio. */
 .services {
     padding: 88px 20px 120px;
     background-color: var(--gray-600);
