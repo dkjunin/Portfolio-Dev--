@@ -1,0 +1,77 @@
+.content-tag-github{
+    background-color: var(--gray-400);
+    width: 114px;
+    height: 40px;
+    border-radius: 100px;
+    padding-inline: 16px;
+    padding-block: 8px;  
+    img{
+        width: 19.05px;
+        height: 19.02px;
+        
+
+    }
+}
+.content-tag-HTML{
+    background-color: var(--gray-400);
+    width: 105px;
+    height: 40px;
+    border-radius: 100px;
+    padding-inline: 16px;
+    padding-block: 8px;  
+       img{
+        width: 19.05px;
+        height: 19.02px;
+        
+        
+    }
+}
+.content-tag-css{
+    background-color: var(--gray-400);
+    width: 92px;
+    height: 40px;
+    border-radius: 100px;
+    padding-inline: 16px;
+    padding-block: 8px;  
+       img{
+        width: 19.05px;
+        height: 19.02px;
+    }
+}
+.content-tag-javascript{
+    background-color: var(--gray-400);
+    width: 138px;
+    height: 40px;
+    border-radius: 100px;
+    padding-inline: 16px;
+    padding-block: 8px;  
+    img{
+     width: 19.05px;
+     height: 19.02px;
+    }
+}
+.content-tag-react{
+    background-color: var(--gray-400);
+    width: 106px;
+    height: 40px;
+    border-radius: 100px;
+    padding-inline: 16px;
+    padding-block: 8px;  
+    img{
+     width: 19.05px;
+     height: 19.02px;
+    }
+}
+.content-tag-nodejs{
+    background-color: var(--gray-400);
+    width: 119px;
+    height: 40px;
+    border-radius: 100px;
+    padding-inline: 16px;
+    padding-block: 8px;  
+       img{
+        width: 19.05px;
+        height: 19.02px;
+    }
+}
+

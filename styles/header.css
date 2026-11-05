@@ -1,0 +1,109 @@
+
+#intro {
+    background-image: url(/assets/bg/Background_Intro.png);
+    /* estica a imagem para preencher o fundo sem cortar nenhuma parte. */
+    background-size: 100% 100%;
+    /* alinha o fundo ao topo, evitando espaço vazio acima. */
+    background-position: center top;
+    background-repeat: no-repeat;
+   
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 180px;
+    padding-bottom: 120px;
+}
+
+header{
+    padding-block: 120px 183px;
+    padding-inline: 163px;
+    margin-bottom: 94px;
+    margin-top: 120px;
+
+}
+
+div{
+    margin-bottom: 56px;
+    margin: auto;
+}
+
+/* define o avatar como referencia para posicionar o icone por cima da foto. */
+.avatar {
+    position: relative;
+    width: 112px;
+    height: 112px;
+    
+    
+}
+
+/* faz a foto ocupar todo o espaco reservado ao avatar. */
+.foto {
+    display: block;
+    width: 96px;
+    height: 96px;
+}
+
+/* sobrepoe o icone no canto inferior direito da foto. */
+
+.code {
+    position: absolute;
+    right:15px;
+    bottom: 18px;
+    width: 31px;
+    height: 25px;
+    z-index: 1;
+   
+}
+
+#apresentação{
+    color: var(--gray-200);
+    font: var(--subtitle);
+    text-align: center;
+    strong{
+        color:var(--red);
+    }
+    margin-top: 56px;
+    margin-bottom: 8px;
+}
+h1{
+    margin-bottom: 20px;
+    margin-top: 8px;
+}
+
+p{
+    color: var(--gray-300);
+    font: var(--text-sm); 
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+span{
+    color: var(--gray-200);
+    font: var(--text-md);
+    align-items: center;
+}
+
+div #div-tag{
+    display: inline-flex;
+    align-items: center;
+    gap: 122px;
+
+}
+#tags{
+    /* alinha o ícone e o texto na mesma linha e centraliza suas alturas. */
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+
+
+}
+
+#seta {
+    /* centraliza a seta abaixo das tags e mantém um espaço entre elas. */
+    display: flex;
+    justify-content: center;
+    margin: 94px auto 0;
+
+}
